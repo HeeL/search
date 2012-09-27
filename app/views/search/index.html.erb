@@ -1,0 +1,17 @@
+<%= render 'form'%>
+
+
+<% if !params[:request].blank?%>
+  <h1> Results: </h1>
+  
+  <% @articles.each do |article| %>
+    <div class="article-list">
+      <h2><%= article.title %></h2>
+      <%= article.text %>
+    </div>
+  <% end %>
+  
+  <% @results.each do |topic| %>
+    <h2><%= link_to page_title(topic), static_posts_path(title: topic)%></h2>
+  <% end %>
+<% end %>
