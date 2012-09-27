@@ -1,11 +1,11 @@
 Run tests:
 
-    `rake`
+    rake
 
 
 Add dynamic articles from Rails Console:
     
-    `Article.create(title: 'title', text: 'text')`
+    Article.create(title: 'title', text: 'text')
 
 
 Static articles:
